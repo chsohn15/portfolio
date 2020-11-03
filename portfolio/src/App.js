@@ -1,7 +1,9 @@
 //import './App.css';
 import Intro from './components/Intro.js'
 import Header from './components/Header.js'
-import myStory from './components/myStory.js'
+import MyStory from './components/MyStory.js'
+import Work from './components/Work.js'
+import Projects from './components/Projects.js'
 
 function App() {
   return (
@@ -9,6 +11,9 @@ function App() {
       <Header />
       Personal Portfolio
       <Intro />
+      <MyStory />
+      <Projects />
+      <Work />
     </div>
   );
 }
