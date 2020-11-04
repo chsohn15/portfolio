@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Intro = () => {
 
     const Title = styled.h1`
-    padding-top: 180px; 
+    padding-top: 100px; 
     color: purple; 
     padding-left: 20px;
     `;
