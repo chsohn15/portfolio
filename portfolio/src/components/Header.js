@@ -14,12 +14,12 @@ const Header = () => {
                 height="30"
                 className="d-inline-block align-top"
             />{' '}Christina Sohn </Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link href="#my-story">My Story</Nav.Link>
-      <Nav.Link href="#projects">Projects</Nav.Link>
-      <Nav.Link href="#work">Work</Nav.Link>
-      <Nav.Link href="#contact-me">Contact Me</Nav.Link>
-      </Nav>
+        <Nav className="mr-auto">
+            <Nav.Link href="#my-story">My Story</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#work">Work</Nav.Link>
+            <Nav.Link href="#contact-me">Contact Me</Nav.Link>
+        </Nav>
    
   </Navbar>
     )

@@ -7,7 +7,7 @@ const Intro = () => {
     const Title = styled.h1`
     padding-top: 100px; 
     color: purple; 
-    padding-left: 20px;
+    margin-left: 50px;
     `;
 
     return (
