@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      Personal Portfolio
       <Intro />
       <MyStory />
       <Projects />
