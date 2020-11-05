@@ -5,28 +5,32 @@ import styled from 'styled-components';
 
 const Intro = () => {
 
-    let phrases = ["web pages", "Ruby on Rails backends", "React apps"]
-    //set initital state of phrase
-    const[phrase, changePhraseState] = useState(phrases[0])
+    //set initital state of phrase to be transitioned
+    const[phrase, changePhraseState] = useState("web pages")
 
-    useEffect((phrases) => {
-        //transitionPhrases(phrases)
-        console.log("PHRASES:" + phrases)
+    useEffect(() => {
+        //transitionPhrases()
       }, [])
     
-    let transitionPhrases = (phraseArray) => {
+    let transitionPhrases = () => {
         let i = 0
-        let phrases = phraseArray
-        setInterval((phrases) => {
-            if (i < phrases.length -1){
-                i++
+        let l = 3 //length of array
+
+        setInterval(() => {
+            let phraseArray = ["web pages", "Ruby on Rails backends", "React apps"]
+
+            if (i < l){
+                changePhraseState(phraseArray[i])
+                i+=1
             }
             else {
                 i = 0
+                changePhraseState(phraseArray[i])
+                i+=0
             }
-            changePhraseState(phrases[i])
+            
 
-        }, 2000)
+        }, 3000)
     }
 
     //Set interval so that 
