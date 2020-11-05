@@ -4,6 +4,7 @@ import Header from './components/Header.js'
 import MyStory from './components/MyStory.js'
 import Work from './components/Work.js'
 import Projects from './components/Projects.js'
+import Blogs from './components/Blogs.js'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Intro />
       <MyStory />
       <Projects />
+      <Blogs />
       <Work />
     </div>
   );
