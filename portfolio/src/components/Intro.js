@@ -9,7 +9,7 @@ const Intro = () => {
     const[phrase, changePhraseState] = useState("web pages")
 
     useEffect(() => {
-        //transitionPhrases()
+        transitionPhrases()
       }, [])
     
     let transitionPhrases = () => {
@@ -20,15 +20,15 @@ const Intro = () => {
             let phraseArray = ["web pages", "Ruby on Rails backends", "React apps"]
 
             if (i < l){
+                
                 changePhraseState(phraseArray[i])
-                i+=1
             }
             else {
                 i = 0
                 changePhraseState(phraseArray[i])
-                i+=0
+               
             }
-            
+            i++
 
         }, 3000)
     }
