@@ -33,7 +33,7 @@ const Intro = () => {
     }
 
     //Set interval so that 
-    const Subtitle = styled.h6`
+    const Subtitle = styled.h5`
     padding-top: 200px; 
     color: purple; 
     margin-left: 50px;
@@ -43,6 +43,7 @@ const Intro = () => {
     padding-top: 10px; 
     color: purple; 
     margin-left: 50px;
+    font-size: 55px
     `;
 
     return (

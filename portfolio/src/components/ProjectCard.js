@@ -1,8 +1,9 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+//import Col from 'react-bootstrap/Col'
+//import Row from 'react-bootstrap/Row'
 import CardDeck from 'react-bootstrap/CardDeck'
+import ReactPlayer from "react-player"
 
 const ProjectCard = () => {
     return (
@@ -10,7 +11,7 @@ const ProjectCard = () => {
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>BookQuest</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
         additional content. This content is a little bit longer.
@@ -23,7 +24,7 @@ const ProjectCard = () => {
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>The Harry Potter Writing App</Card.Title>
       <Card.Text>
         This card has supporting text below as a natural lead-in to additional
         content.{' '}
@@ -36,7 +37,7 @@ const ProjectCard = () => {
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>{"K & C Art Gallery"}</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
         additional content. This card has even longer content than the first to
