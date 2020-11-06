@@ -2,16 +2,21 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
+import SectionHeader from './SectionHeader'
 
-const Blogs = () => {
+const Blogs = (props) => {
+  const Header = props.Header
 
     return (
-        <Row style={{marginLeft: '30px', marginTop: '50px', marginRight: '30px'}}>
+      <Container style={{marginTop: '75px'}}>
+      <Row style={{marginLeft: '0px', marginRight: '0px'}}>
+        <SectionHeader Header={props.Header} title={"Blog Posts"}/>
+      </Row>
+        <Row style={{marginLeft: '30px', marginTop: '10px', marginRight: '30px'}}>
         <Col>
           <Card>
-            <Card.Header>Blogs</Card.Header>
             <Row >
-
                 <Card.Body>
                   <Card.Text>
                   Blogs
@@ -22,6 +27,7 @@ const Blogs = () => {
           </Card>
         </Col>
       </Row>
+      </Container>
     )
 }
 

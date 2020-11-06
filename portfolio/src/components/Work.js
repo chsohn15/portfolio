@@ -2,9 +2,17 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
+import SectionHeader from './SectionHeader'
 
-const Work = () => {
+const Work = (props) => {
+
+  const Header = props.Header
     return (
+      <Container style={{marginTop: '75px'}}>
+      <Row style={{marginLeft: '0px', marginRight: '0px'}}>
+        <SectionHeader Header={props.Header} title={"Work Experience"}/>
+      </Row>
         <Row style={{marginLeft: '100px', marginTop: '50px', marginRight: '100px'}}>
         <Col>
           <Card>
@@ -27,6 +35,7 @@ const Work = () => {
           </Card>
         </Col>
       </Row>
+      </Container>
     )
 }
 
