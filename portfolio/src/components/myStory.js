@@ -8,7 +8,7 @@ const MyStory = () => {
         <Row style={{marginLeft: '200px', marginTop: '100px', marginRight: '200px'}}>
         <Col>
           <Card >
-            <Card.Header>My Story</Card.Header>
+            <Card.Header><Card.Text style={{fontSize: '20px'}}>My Story</Card.Text></Card.Header>
             <Row >
               <Col md="8">
                 <Card.Body>

@@ -29,7 +29,7 @@ const Intro = () => {
             }
             i++
 
-        }, 3000)
+        }, 2000)
     }
 
     //Set interval so that 
