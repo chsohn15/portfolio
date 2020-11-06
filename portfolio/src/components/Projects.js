@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 
 const Projects = () => {
     return (
-        <Row style={{marginLeft: '30px', marginTop: '50px', marginRight: '30px'}}>
+        <Row style={{marginLeft: '30px', marginTop: '100px', marginRight: '30px'}}>
         <Col>
           <Card>
             <Card.Header>Projects</Card.Header>
