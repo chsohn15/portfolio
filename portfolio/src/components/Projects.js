@@ -13,20 +13,15 @@ const Projects = (props) => {
         <Row style={{marginLeft: '0px', marginRight: '0px'}}>
           <SectionHeader Header={props.Header} title={"Projects"}/>
         </Row>
-        <Row style={{marginLeft: '30px', marginTop: '100px', marginRight: '30px'}}>
+        <Row style={{marginLeft: '30px', marginTop: '20px', marginRight: '30px'}}>
         <Col>
-          <Card>
             <Row >
-
                 <Card.Body>
                   <Card.Text>
                   <ProjectCard />
-
                 </Card.Text>
                 </Card.Body>
-            
             </Row>
-          </Card>
         </Col>
       </Row>
       </Container>

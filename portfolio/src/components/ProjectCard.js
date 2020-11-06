@@ -29,11 +29,12 @@ return (
     </Col>
   </Row>
   </Card>
-  <Card style={{marginTop: "40px"}}>
+
+  <Card style={{marginTop: "60px"}}>
     <Row>
       <Col>
     <Card.Body>
-      <Card.Title>BookQuest</Card.Title>
+      <Card.Title>The Harry Potter Writing App</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
         additional content. This content is a little bit longer.
@@ -47,6 +48,27 @@ return (
       />
       </div>
       </Col>
+  </Row>
+  </Card>
+
+  <Card style={{marginTop: "60px"}}>
+    <Row>
+        <Col>
+      <div style={{width: '100%'}}>
+    <ReactPlayer 
+        url="https://youtu.be/Bf8jipkXKlU"
+      />
+      </div>
+      </Col>
+      <Col>
+    <Card.Body>
+      <Card.Title>{"K & C Art Gallery"}</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    </Col>
   </Row>
   </Card>
   </Container>

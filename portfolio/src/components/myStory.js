@@ -10,7 +10,7 @@ const MyStory = (props) => {
 
 
     return (
-      <Container style={{marginTop: '100px'}}>
+      <Container style={{marginTop: '75px'}}>
         <Row style={{marginLeft: '0px', marginRight: '0px'}}>
           <SectionHeader Header={props.Header} title={"My Story"}/>
         </Row>
