@@ -43,7 +43,7 @@ return (
     <Col>
       <div style={{width: '100%'}}>
     <ReactPlayer 
-        url="https://youtu.be/GHGlrOopo3M"
+        url="https://youtu.be/IDtMxssicik"
       />
       </div>
       </Col>
