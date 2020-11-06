@@ -3,16 +3,16 @@ import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
+import styled from 'styled-components';
+import SectionHeader from './SectionHeader'
 
-const MyStory = () => {
+const MyStory = (props) => {
+
+
     return (
       <Container style={{marginTop: '100px'}}>
-        <Row style={{marginLeft: '0px'}}>
-          <Card style={{border: 'none'}}>
-          <Card.Body>
-            <h1>My Story</h1>
-            </Card.Body>
-          </Card>
+        <Row style={{marginLeft: '0px', marginRight: '0px'}}>
+          <SectionHeader Header={props.Header} title={"My Story"}/>
         </Row>
         <Row >
         <Col>

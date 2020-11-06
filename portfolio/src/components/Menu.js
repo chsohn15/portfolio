@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
-const Header = () => {
+const Menu = () => {
     return (
         <Navbar bg="dark" variant="dark">
  
@@ -25,4 +25,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Menu
