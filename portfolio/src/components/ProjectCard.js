@@ -1,15 +1,24 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-//import Col from 'react-bootstrap/Col'
-//import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 import CardDeck from 'react-bootstrap/CardDeck'
 import ReactPlayer from "react-player"
 
 const ProjectCard = () => {
-    return (
-        <CardDeck>
+return (
+<Container >
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Row>
+        <Col>
+      <div style={{width: '100%'}}>
+    <ReactPlayer 
+        url="https://youtu.be/GHGlrOopo3M"
+      />
+      </div>
+      </Col>
+      <Col>
     <Card.Body>
       <Card.Title>BookQuest</Card.Title>
       <Card.Text>
@@ -17,38 +26,31 @@ const ProjectCard = () => {
         additional content. This content is a little bit longer.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+    </Col>
+  </Row>
   </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+  <Card style={{marginTop: "40px"}}>
+    <Row>
+      <Col>
     <Card.Body>
-      <Card.Title>The Harry Potter Writing App</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>{"K & C Art Gallery"}</Card.Title>
+      <Card.Title>BookQuest</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
+        additional content. This content is a little bit longer.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+    </Col>
+    <Col>
+      <div style={{width: '100%'}}>
+    <ReactPlayer 
+        url="https://youtu.be/GHGlrOopo3M"
+      />
+      </div>
+      </Col>
+  </Row>
   </Card>
-</CardDeck>
+  </Container>
+
             
     )
 }
