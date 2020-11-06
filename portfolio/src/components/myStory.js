@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 const MyStory = () => {
     return (
         <div>
-        <Row style={{marginLeft: '30px'}}>
+        <Row style={{marginLeft: '30px', marginRight: '30px'}}>
         <Col>
           <Card>
             <Card.Header>My Story</Card.Header>
