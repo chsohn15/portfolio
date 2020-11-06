@@ -5,10 +5,9 @@ import Row from 'react-bootstrap/Row'
 
 const MyStory = () => {
     return (
-        <div style={{marginLeft: '100px', marginRight: '100px'}}>
-        <Row>
+        <Row style={{marginLeft: '200px', marginTop: '100px', marginRight: '200px'}}>
         <Col>
-          <Card>
+          <Card >
             <Card.Header>My Story</Card.Header>
             <Row >
               <Col md="8">
@@ -41,8 +40,6 @@ const MyStory = () => {
           </Card>
         </Col>
       </Row>
-            
-        </div>
     )
 }
 
