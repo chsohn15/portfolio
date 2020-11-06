@@ -1,4 +1,3 @@
-//import './App.css';
 import Intro from './components/Intro.js'
 import Menu from './components/Menu.js'
 import MyStory from './components/MyStory.js'

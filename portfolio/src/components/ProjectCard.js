@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
-import CardDeck from 'react-bootstrap/CardDeck'
 import ReactPlayer from "react-player"
 
 const ProjectCard = () => {
