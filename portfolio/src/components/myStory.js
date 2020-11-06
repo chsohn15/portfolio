@@ -2,13 +2,21 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
 const MyStory = () => {
     return (
-        <Row style={{marginLeft: '200px', marginTop: '100px', marginRight: '200px'}}>
+      <Container style={{marginTop: '100px'}}>
+        <Row style={{marginLeft: '0px'}}>
+          <Card style={{border: 'none'}}>
+          <Card.Body>
+            <h1>My Story</h1>
+            </Card.Body>
+          </Card>
+        </Row>
+        <Row >
         <Col>
-          <Card >
-            <Card.Header><Card.Text style={{fontSize: '20px'}}>My Story</Card.Text></Card.Header>
+          <Card style={{border: 'none'}}>
             <Row >
               <Col md="8">
                 <Card.Body>
@@ -40,6 +48,7 @@ const MyStory = () => {
           </Card>
         </Col>
       </Row>
+      </Container>
     )
 }
 
