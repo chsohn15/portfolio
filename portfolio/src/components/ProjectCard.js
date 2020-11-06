@@ -26,10 +26,27 @@ return (
         additional content. This content is a little bit longer.
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
     </Col>
+  </Row>
+  </Card>
+  <Card style={{marginTop: "40px"}}>
+    <Row>
+      <Col>
+    <Card.Body>
+      <Card.Title>BookQuest</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    </Col>
+    <Col>
+      <div style={{width: '100%'}}>
+    <ReactPlayer 
+        url="https://youtu.be/GHGlrOopo3M"
+      />
+      </div>
+      </Col>
   </Row>
   </Card>
   </Container>
