@@ -20,7 +20,6 @@ const Intro = () => {
             let phraseArray = ["web pages", "Ruby on Rails backends", "React apps"]
 
             if (i < l){
-                
                 changePhraseState(phraseArray[i])
             }
             else {
@@ -46,30 +45,15 @@ const Intro = () => {
     margin-left: 50px;
     `;
 
-    // let i = 0 
-
-    // const phrase = (phrases) => {
-    //     setInterval(() => {
-    //         let displayedPhrase = phrases[i]
-    //         if (i >= phrases.length){
-    //             i = 0
-    //         }
-    //         else{
-    //             i++
-    //         }
-    //         return displayedPhrase
-    //     }, 2000)
-
-
-    //}
-
     return (
         <Jumbotron fluid id="jumbotron" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&w=1000&q=80')", backgroundSize: 'cover', height:'100vh'}}>
             <Subtitle>Hello, my name is </Subtitle>
             <Title>Christina Sohn.</Title>
-            <Title>I create and design {phrase}.</Title>
+            <Title>I create and design <span>{phrase}</span>.</Title>
         </Jumbotron>
     )
 }
 
 export default Intro
+
+//animated text: https://medium.com/@valentyn.vasylenko/typewriter-effect-with-alternating-text-in-pure-css3-72cf0c7e6c5
