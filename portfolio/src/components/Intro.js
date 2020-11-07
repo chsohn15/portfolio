@@ -10,6 +10,8 @@ const Intro = () => {
 
     useEffect(() => {
         transitionPhrases()
+
+        return () => clearInterval(transitionPhrases);
       }, [])
     
     let transitionPhrases = () => {
