@@ -12,18 +12,13 @@ const Blogs = (props) => {
 
   const blogs = props.blogs[0]
 
-
-  const blogsDisplay = () => {
-    blogs.map(blog => <BlogCard />)
-  }
-
 return (
 <Container style={{marginTop: '75px'}}>
   <Row style={{marginLeft: '0px', marginRight: '0px'}}>
       <SectionHeader Header={props.Header} title={"Blog Posts"}/>
   </Row>
 <CardDeck>
-  {blogs.map(blog => <BlogCard />)}
+  {blogs ? blogs.map(blog => <BlogCard />) : null}
 </CardDeck>
 </Container>
     )
