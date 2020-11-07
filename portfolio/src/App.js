@@ -6,7 +6,7 @@ import Projects from './components/Projects.js'
 import Blogs from './components/Blogs.js'
 import styled from 'styled-components';
 import { useEffect, useState } from 'react'
-import { BrowserRouter } from 'react-router-dom'
+//import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 

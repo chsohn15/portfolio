@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
-import { BrowserRouter, Link } from 'react-router-dom'
 //import sanitizeHtml from 'sanitize-html';
 
 const BlogCard = (props) => {
