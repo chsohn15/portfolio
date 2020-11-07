@@ -18,7 +18,7 @@ return (
       <SectionHeader Header={props.Header} title={"Blog Posts"}/>
   </Row>
 <CardDeck>
-  {blogs ? blogs.map(blog => <BlogCard />) : null}
+  {blogs ? blogs.map(blog => <BlogCard blog={blog}/>) : null}
 </CardDeck>
 </Container>
     )
