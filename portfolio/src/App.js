@@ -6,6 +6,7 @@ import Projects from './components/Projects.js'
 import Blogs from './components/Blogs.js'
 import styled from 'styled-components';
 import { useEffect, useState } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 
@@ -42,8 +43,8 @@ function App() {
       <Intro />
       <MyStory Header={Header}/>
       <Projects Header={Header}/>
-      <Blogs Header={Header} blogs={blogs}/>
       <Work Header={Header}/>
+      <Blogs Header={Header} blogs={blogs}/>
     </div>
   );
 }
