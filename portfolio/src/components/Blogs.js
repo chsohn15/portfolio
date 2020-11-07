@@ -1,33 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import SectionHeader from './SectionHeader'
+import BlogCard from './BlogCard.js'
 
 const Blogs = (props) => {
   const Header = props.Header
 
-    return (
-      <Container style={{marginTop: '75px'}}>
-      <Row style={{marginLeft: '0px', marginRight: '0px'}}>
-        <SectionHeader Header={props.Header} title={"Blog Posts"}/>
-      </Row>
-        <Row style={{marginLeft: '30px', marginTop: '10px', marginRight: '30px'}}>
-        <Col>
-          <Card>
-            <Row >
-                <Card.Body>
-                  <Card.Text>
-                  Blogs
-                </Card.Text>
-                </Card.Body>
-            
-            </Row>
-          </Card>
-        </Col>
-      </Row>
-      </Container>
+  const blogs = props.blogs[0]
+
+
+  const blogsDisplay = () => {
+    blogs.map(blog => <BlogCard />)
+  }
+
+return (
+<Container style={{marginTop: '75px'}}>
+  <Row style={{marginLeft: '0px', marginRight: '0px'}}>
+      <SectionHeader Header={props.Header} title={"Blog Posts"}/>
+  </Row>
+<CardDeck>
+  {blogs.map(blog => <BlogCard />)}
+</CardDeck>
+</Container>
     )
 }
 
