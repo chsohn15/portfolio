@@ -1,16 +1,18 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
-import CardDeck from 'react-bootstrap/CardDeck'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import Container from 'react-bootstrap/Container'
+//import sanitizeHtml from 'sanitize-html';
 
 const BlogCard = (props) => {
 
 console.log(props.blog)
 
 const { title, thumbnail, content } = props.blog
-const preview = content.slice(0, 150)
+
+let pTag = content.search('<p>')
+let stringStart = pTag + 3
+
+const preview = content.slice(stringStart, stringStart + 150)
+
 
 return(
     <Card>
