@@ -9,7 +9,7 @@ import SectionHeader from './SectionHeader'
 const Projects = (props) => {
   const Header = props.Header
     return (
-      <Container style={{marginTop: '100px'}}>
+      <Container id="projects" style={{marginTop: '100px'}}>
         <Row style={{marginLeft: '0px', marginRight: '0px'}}>
           <SectionHeader Header={props.Header} title={"Projects"}/>
         </Row>

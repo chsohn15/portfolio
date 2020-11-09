@@ -6,12 +6,14 @@ import Container from 'react-bootstrap/Container'
 import styled from 'styled-components';
 import SectionHeader from './SectionHeader'
 import ProfilePhoto from './profilePhoto.jpg'
+//import GitHub from '@material-ui/icons/GitHub';
+//import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const MyStory = (props) => {
 
 
     return (
-      <Container style={{marginTop: '75px'}}>
+      <Container style={{marginTop: '75px'}} id="my-story">
         <Row style={{marginLeft: '0px', marginRight: '0px'}}>
           <SectionHeader Header={props.Header} title={"My Story"}/>
         </Row>
@@ -33,6 +35,7 @@ const MyStory = (props) => {
                 <li>HTML and CSS</li>
                 <li>Material UI, Bootstrap UI, Semantic UI</li>
             </ul>
+
                   </Card.Text>
  
                 </Card.Body>
@@ -44,6 +47,7 @@ const MyStory = (props) => {
                   src={ProfilePhoto}
                   alt="Card image cap"
                 />
+
               </Col>
             </Row>
           </Card>

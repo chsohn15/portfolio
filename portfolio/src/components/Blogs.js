@@ -13,7 +13,7 @@ const Blogs = (props) => {
   const blogs = props.blogs[0]
 
 return (
-<Container style={{marginTop: '75px'}}>
+<Container id ="blog" style={{marginTop: '75px'}}>
   <Row style={{marginLeft: '0px', marginRight: '0px'}}>
       <SectionHeader Header={props.Header} title={"Blog Posts"}/>
   </Row>

@@ -2,7 +2,8 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import CSLogo from './CSLogo4.png'
-import GitHubIcon from '@material-ui/icons/GitHub';
+import GitHub from '@material-ui/icons/GitHub';
+
 
 const Menu = () => {
     return (
@@ -22,6 +23,7 @@ const Menu = () => {
             <Nav.Link href="#work">Work</Nav.Link>
             <Nav.Link href="#blog">Blog</Nav.Link>
             <Nav.Link href="#contact-me">Contact Me</Nav.Link>
+            <GitHub style={{color:'white'}}/>
         </Nav>
    
   </Navbar>
