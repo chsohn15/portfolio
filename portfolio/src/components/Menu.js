@@ -12,7 +12,6 @@ import { faMedium } from '@fortawesome/free-brands-svg-icons'
 const Menu = () => {
     return (
         <Navbar bg="dark" variant="dark" >
- 
             <Navbar.Brand href="#home" style={{marginLeft: '30px', marginTop: '-1px'}}>
                 <img
                 alt=""

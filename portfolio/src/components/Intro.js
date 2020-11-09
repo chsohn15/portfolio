@@ -16,11 +16,14 @@ const Intro = () => {
     
     let transitionPhrases = () => {
         let i = 0
-        let l = 3 //length of array
+        let l = 4 //length of array
 
         setInterval(() => {
-            let phraseArray = ["web pages", "Ruby on Rails backends", "React apps"]
-
+            let phraseArray = ["web pages", "Ruby on Rails backends", "React apps", "user experiences"]
+            if (i === 0){
+                i++ 
+                changePhraseState(phraseArray[i])
+            }
             if (i < l){
                 changePhraseState(phraseArray[i])
             }
@@ -31,12 +34,12 @@ const Intro = () => {
             }
             i++
 
-        }, 2000)
+        }, 2500)
     }
 
     //Set interval so that 
     const Subtitle = styled.h5`
-    padding-top: 200px; 
+    padding-top: 150px; 
     color: purple; 
     margin-left: 50px;
     `;
@@ -52,7 +55,7 @@ const Intro = () => {
         <Jumbotron fluid id="jumbotron" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&w=1000&q=80')", backgroundSize: 'cover', height:'100vh'}}>
             <Subtitle>Hello, my name is </Subtitle>
             <Title>Christina Sohn.</Title>
-            <Title>I create and design <span>{phrase}</span>.</Title>
+            <Title>I create and design <span id="test">{phrase}.</span></Title>
         </Jumbotron>
     )
 }
