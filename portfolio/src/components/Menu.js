@@ -5,8 +5,8 @@ import CSLogo from './CSLogo4.png'
 import GitHub from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedium } from '@fortawesome/free-brands-svg-icons'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faMedium } from '@fortawesome/free-brands-svg-icons'
 
 
 const Menu = () => {
@@ -30,7 +30,7 @@ const Menu = () => {
             <MailOutlineIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/>
             <LinkedInIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/>
             <GitHub style={{color:'white', marginTop: '3px', marginRight: '20px'}}/>
-            <FontAwesomeIcon icon={faMedium} style={{color:'white', marginTop: '3px', marginRight: '10px', fontSize: '23px'}}/>
+            {/* <FontAwesomeIcon icon={faMedium} style={{color:'white', marginTop: '3px', marginRight: '10px', fontSize: '23px'}}/> */}
             
   </Navbar>
     )

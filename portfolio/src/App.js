@@ -1,12 +1,23 @@
+import React, { Component, lazy, Suspense, useRef } from 'react'
 import Intro from './components/Intro.js'
 import Menu from './components/Menu.js'
-import MyStory from './components/MyStory.js'
+//import MyStory from './components/MyStory.js'
 import Work from './components/Work.js'
 import Projects from './components/Projects.js'
 import Blogs from './components/Blogs.js'
 import styled from 'styled-components';
 import { useEffect, useState } from 'react'
-//import { BrowserRouter } from 'react-router-dom'
+//import { useVisibilityHook } from 'react-lazyloading';
+import LazyLoad from 'react-lazy-load';
+
+const MyStory = lazy(() => slowImport(import('./components/MyStory'), 1000))
+
+export function slowImport(value, ms = 1000) {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(value), ms);
+  });
+}
+
 
 function App() {
 
@@ -41,10 +52,12 @@ function App() {
     <div className="App">
       <Menu />
       <Intro />
+      <Suspense fallback={<div>Loading.....</div>}>
       <MyStory Header={Header}/>
       <Projects Header={Header}/>
       <Work Header={Header}/>
       <Blogs Header={Header} blogs={blogs}/>
+      </Suspense>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container'
 import styled from 'styled-components';
 import SectionHeader from './SectionHeader'
 import ProfilePhoto from './profilePhoto.jpg'
+
 //import GitHub from '@material-ui/icons/GitHub';
 //import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
