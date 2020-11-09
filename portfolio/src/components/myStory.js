@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import styled from 'styled-components';
 import SectionHeader from './SectionHeader'
+import ProfilePhoto from './profilePhoto.jpg'
 
 const MyStory = (props) => {
 
@@ -40,7 +41,7 @@ const MyStory = (props) => {
                 <Card.Img
                   top
                   width="100%"
-                  src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+                  src={ProfilePhoto}
                   alt="Card image cap"
                 />
               </Col>
