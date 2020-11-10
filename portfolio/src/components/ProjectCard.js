@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -17,6 +17,12 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import Popper from '@material-ui/core/Popper';
+
+import ReactDOM from 'react-dom'
+import ModalVideo from 'react-modal-video'
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const tutorialSteps = [
   {
@@ -47,12 +53,21 @@ const useStyles = makeStyles((theme) => ({
     display: 'block',
     width: '100%',
   },
+  paper: {
+    border: '1px solid',
+    padding: theme.spacing(1.5),
+    backgroundColor: theme.palette.background.paper,
+  },
 }));
 
 const ProjectCard = () => {
 
+  const [isOpen, openModal] = useState(false)
+
   const classes = useStyles();
   const theme = useTheme();
+
+  // Code for stepper 1
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = tutorialSteps.length;
 
@@ -63,6 +78,16 @@ const ProjectCard = () => {
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
+
+  //Code for popper
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popper' : undefined;
 
 
 return (
@@ -98,7 +123,15 @@ return (
       </Col>
       <Col sm={4} style={{marginLeft: '0px'}}>
         <Card.Body>
-          <Card.Title>BookQuest</Card.Title>
+          <Card.Title>BookQuest
+            <ModalVideo channel='youtube' isOpen={isOpen} videoId='GHGlrOopo3M' onClose={() => openModal(false)} />
+            <YouTubeIcon onClick={openModal} style={{cursor: 'pointer', fontSize: '30px', marginLeft: '15px'}}>Youtube</YouTubeIcon>
+            <GitHubIcon style={{ marginLeft: '10px'}} aria-describedby={id} type="button" onClick={handleClick}/>
+            <Popper id={id} open={open} anchorEl={anchorEl}>
+              <Typography className={classes.paper}>Github Frontend</Typography>
+              <Typography className={classes.paper}>Github Backend</Typography>
+          </Popper>
+          </Card.Title>
           <Card.Text>
           <em>An app designed to motivate young people to read and interact with books through a rewards system</em><br/><br/>
           <div>Technologies: </div>
