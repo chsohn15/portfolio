@@ -79,7 +79,7 @@ return (
       <MobileStepper
         steps={maxSteps}
         position="static"
-        variant="text"
+        variant="dots"
         activeStep={activeStep}
         nextButton={
           <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
@@ -95,14 +95,20 @@ return (
         }
       />
     </div>
-        {/* <img style={{width: '600px'}} src={BookQuest1}/> */}
       </Col>
       <Col sm={4} style={{marginLeft: '0px'}}>
         <Card.Body>
           <Card.Title>BookQuest</Card.Title>
           <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in to
-          additional content. This content is a little bit longer.
+          <em>An app designed to motivate young people to read and interact with books through a rewards system</em><br/><br/>
+          <div>Technologies: </div>
+          <ul>
+            <li>React and Redux</li>
+            <li>Ruby on Rails</li>
+            <li>Google Books API and Embedded Viewer</li>
+            <li>JSON Web Tokens, OAuth</li>
+            <li>Material UI, Bootstrap, CSS</li>
+          </ul>
           </Card.Text>
         </Card.Body>
       </Col>
