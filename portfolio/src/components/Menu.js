@@ -33,7 +33,7 @@ const Menu = () => {
 
 
     return (
-        <Navbar bg="dark" variant="dark" className={stickyTopStatus}>
+        <Navbar bg="dark" variant="dark" className={stickyTopStatus} id={stickyTopStatus}>
             <Navbar.Brand href="#home" style={{marginLeft: '30px', marginTop: '-1px'}}>
                 <img
                 alt=""
