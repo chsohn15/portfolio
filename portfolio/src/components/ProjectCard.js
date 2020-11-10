@@ -4,29 +4,26 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import ReactPlayer from "react-player"
+import BookQuest1 from '../images/BookQuest1.jpeg'
 
 const ProjectCard = () => {
 return (
 <Container >
   <Card>
     <Row>
-        <Col>
-      <div style={{width: '100%'}}>
-    <ReactPlayer 
-        url="https://youtu.be/GHGlrOopo3M"
-      />
-      </div>
+      <Col sm={7}>
+        <img style={{width: '570px'}} src={BookQuest1}/>
       </Col>
-      <Col>
-    <Card.Body>
-      <Card.Title>BookQuest</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    </Col>
-  </Row>
+      <Col sm={4} style={{marginLeft: '0px'}}>
+        <Card.Body>
+          <Card.Title>BookQuest</Card.Title>
+          <Card.Text>
+          This is a wider card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.
+          </Card.Text>
+        </Card.Body>
+      </Col>
+    </Row>
   </Card>
 
   <Card style={{marginTop: "60px"}}>
