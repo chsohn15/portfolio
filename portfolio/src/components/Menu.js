@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import CSLogo from '../images/CSLogo4.png'
@@ -10,8 +10,30 @@ import { faMedium } from '@fortawesome/free-brands-svg-icons'
 
 
 const Menu = () => {
+    const [isHide, hide] = useState(false)
+    const [stickyTopStatus, changeStatus] = useState("sticky-top")
+
+    let prev = 0 
+    const hideBar = () => {
+        //prev = window.scrollY;
+
+        window.scrollY > prev ?
+        changeStatus("")
+        :
+        changeStatus("sticky-top")
+
+        prev = window.scrollY;
+     }
+
+     useEffect(() => {
+        window.addEventListener('scroll', hideBar);
+
+        return () => window.removeEventListener('scroll', hideBar);
+      }, [])
+
+
     return (
-        <Navbar bg="dark" variant="dark" >
+        <Navbar bg="dark" variant="dark" className={stickyTopStatus}>
             <Navbar.Brand href="#home" style={{marginLeft: '30px', marginTop: '-1px'}}>
                 <img
                 alt=""
@@ -34,6 +56,7 @@ const Menu = () => {
             
   </Navbar>
     )
-}
+    }
+
 
 export default Menu

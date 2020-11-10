@@ -130,8 +130,12 @@ return (
             <YouTubeIcon onClick={openModal} style={{cursor: 'pointer', fontSize: '30px', marginLeft: '15px'}}>Youtube</YouTubeIcon>
             <GitHubIcon style={{ marginLeft: '10px'}} aria-describedby={id} type="button" onClick={handleClick}/>
             <Popper id={id} open={open} anchorEl={anchorEl} >
-              <Typography onClick={() => window.open("https://github.com/chsohn15/book_quest_frontend/tree/master/book-quest-react", "_blank")} className={classes.paper} style={{cursor: 'pointer'}}>Github Frontend</Typography>
-              <Typography onClick={() => window.open("https://github.com/chsohn15/book_quest_backend", "_blank")} className={classes.paper} style={{cursor: 'pointer'}}>Github Backend</Typography>
+              <Typography anchorEl={anchorEl} onClick={() => {
+                handleClick()
+                window.open("https://github.com/chsohn15/book_quest_frontend/tree/master/book-quest-react", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Frontend</Typography>
+              <Typography anchorEl={anchorEl} onClick={() => {
+                handleClick()
+                window.open("https://github.com/chsohn15/book_quest_backend", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Backend</Typography>
           </Popper>
           </Card.Title>
           <Card.Text>
