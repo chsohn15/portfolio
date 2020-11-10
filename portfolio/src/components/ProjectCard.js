@@ -121,8 +121,7 @@ return (
     <Card.Body>
       <Card.Title>The Harry Potter Writing App</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+      <em>An app designed to engage students in writing and connect students with their teachers</em>
       </Card.Text>
     </Card.Body>
     </Col>
@@ -149,8 +148,7 @@ return (
     <Card.Body>
       <Card.Title>{"K & C Art Gallery"}</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+      <em>A virtual art gallery that recreates the aesthetic and sensory experience of being in a museum </em>
       </Card.Text>
     </Card.Body>
     </Col>
