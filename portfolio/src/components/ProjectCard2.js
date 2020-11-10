@@ -9,6 +9,10 @@ import HP2 from '../images/HP2.jpeg'
 import HP3 from '../images/HP3.jpeg'
 import HP4 from '../images/HP4.jpeg'
 import HP5 from '../images/HP5.jpeg'
+import HP6 from '../images/HP6.jpeg'
+import HP7 from '../images/HP7.jpeg'
+import HP8 from '../images/HP8.jpeg'
+import HP9 from '../images/HP9.jpeg'
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
@@ -41,6 +45,18 @@ const tutorialSteps = [
   },
   {
     imgPath: HP5,
+  },
+  {
+    imgPath: HP6,
+  },
+  {
+    imgPath: HP7,
+  },
+  {
+    imgPath: HP8,
+  },
+  {
+    imgPath: HP9,
   },
 ];
 
@@ -105,10 +121,10 @@ return (
             <Popper id={id} open={open} anchorEl={anchorEl} >
               <Typography anchorEl={anchorEl} onClick={() => {
                 handleClick()
-                window.open("https://github.com/chsohn15/book_quest_frontend/tree/master/book-quest-react", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Frontend</Typography>
+                window.open("https://github.com/chsohn15/hp_writing_app_frontend", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Frontend</Typography>
               <Typography anchorEl={anchorEl} onClick={() => {
                 handleClick()
-                window.open("https://github.com/chsohn15/book_quest_backend", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Backend</Typography>
+                window.open("https://github.com/chsohn15/hp_writing_app_backend", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Backend</Typography>
           </Popper>
           </Card.Title>
           <Card.Text>
