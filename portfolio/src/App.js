@@ -1,16 +1,18 @@
-import React, { Component, lazy, Suspense, useRef } from 'react'
+import React, { Component, lazy} from 'react'
 import Intro from './components/Intro.js'
 import Menu from './components/Menu.js'
-//import MyStory from './components/MyStory.js'
+import MyStory from './components/MyStory.js'
 import Work from './components/Work.js'
 import Projects from './components/Projects.js'
 import Blogs from './components/Blogs.js'
 import styled from 'styled-components';
 import { useEffect, useState } from 'react'
+import { useDebounce } from 'use-debounce';
+ 
 //import { useVisibilityHook } from 'react-lazyloading';
 import LazyLoad from 'react-lazy-load';
 
-const MyStory = lazy(() => slowImport(import('./components/MyStory'), 1000))
+//const MyStory = lazy(() => slowImport(import('./components/MyStory'), 1000))
 
 export function slowImport(value, ms = 1000) {
   return new Promise(resolve => {
@@ -22,8 +24,17 @@ export function slowImport(value, ms = 1000) {
 function App() {
 
   const [blogs, addBlogs] = useState([])
+  const [scroll, changeScroll] = useState(0)
+
+  const [scrollY] = useDebounce(scroll, 0)
+
+  const handleScroll = (event) => {
+        changeScroll(window.scrollY)
+  }
 
   useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@chsohn15')
     .then(res => res.json())
     .then(data => {
@@ -52,12 +63,15 @@ function App() {
     <div className="App">
       <Menu />
       <Intro />
-      <Suspense fallback={<div>Loading.....</div>}>
-      <MyStory Header={Header}/>
-      <Projects Header={Header}/>
-      <Work Header={Header}/>
-      <Blogs Header={Header} blogs={blogs}/>
-      </Suspense>
+      {scrollY >= 90 && scrollY <=1100 ? 
+      <MyStory Header={Header}/> : <div style={{height: '760px'}}></div>
+      }
+      {scrollY >= 700 && scrollY <=3000? 
+      <Projects Header={Header}/> : <div style={{height: '1700px'}}></div>}
+      {scrollY >= 1500 ? 
+      <Work Header={Header}/> : null}
+      {scrollY >= 2800 ? 
+      <Blogs Header={Header} blogs={blogs}/> : null}
     </div>
   );
 }
