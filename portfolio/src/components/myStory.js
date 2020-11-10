@@ -14,7 +14,7 @@ const MyStory = (props) => {
 
 
     return (
-      <Container style={{marginTop: '75px'}} id="my-story">
+      <Container style={{marginTop: '75px'}} id="my-story" class="animated animatedFadeInUp fadeInUp">
         <Row style={{marginLeft: '0px', marginRight: '0px'}}>
           <SectionHeader Header={props.Header} title={"My Story"}/>
         </Row>

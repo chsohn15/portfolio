@@ -42,32 +42,65 @@ code {
   75% { opacity: 1 }
 }
 
-#my-story{
+/* #my-story{
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
-}
-@keyframes fadein {
-  0% { opacity: 0 }
-  100% { opacity: 1 }
-}
-@-moz-keyframes fadein { /* Firefox */
-  0%{ opacity: 0 }
-  100% { opacity: 1 }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  0% { opacity: 0 }
-  100% { opacity: 1 }
-}
-@-o-keyframes fadein { /* Opera */
-  0% { opacity: 0 }
-  100% { opacity: 1 }
-}
+  /* -webkit-animation: fadein 2s; Safari and Chrome */
+  /* -o-animation: fadein 2s; Opera */
+ /* */ *
 
-#projects, #work, #blog{
+
+
+{
   animation: fadein 5s;
   -moz-animation: fadein 5s; /* Firefox */
   -webkit-animation: fadein s; /* Safari and Chrome */
   -o-animation: fadein 5s; /* Opera */
+}
+
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+#my-story {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both
+}
+
+#projects, #work, #blog {
+  animation-duration: 4.5s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 4.5s;
+  -webkit-animation-fill-mode: both
+}
+
+#my-story, #projects, #work, #blog {
+  opacity: 0
+}
+
+#my-story, #projects, #work, #blog {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }

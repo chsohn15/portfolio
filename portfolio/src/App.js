@@ -60,19 +60,29 @@ function App() {
 
 
   return (
+
     <div className="App">
-      <Menu />
-      <Intro />
-      {scrollY >= 90 && scrollY <=1100 ? 
-      <MyStory Header={Header}/> : <div style={{height: '760px'}}></div>
-      }
-      {scrollY >= 700 && scrollY <=3000? 
-      <Projects Header={Header}/> : <div style={{height: '1700px'}}></div>}
-      {scrollY >= 1500 ? 
-      <Work Header={Header}/> : null}
-      {scrollY >= 2800 ? 
-      <Blogs Header={Header} blogs={blogs}/> : null}
-    </div>
+    <Menu />
+    <Intro />
+    <MyStory Header={Header}/> 
+    <Projects Header={Header}/> 
+    <Work Header={Header}/>
+    <Blogs Header={Header} blogs={blogs}/> 
+  </div>
+
+    // <div className="App">
+    //   <Menu />
+    //   <Intro />
+    //   {scrollY >= 90  ? 
+    //   <MyStory Header={Header}/> : null
+    //   }
+    //   {scrollY >= 600 ? 
+    //   <Projects Header={Header}/> : null}
+    //   {scrollY >= 1500 ? 
+    //   <Work Header={Header}/> : null}
+    //   {scrollY >= 2700 ? 
+    //   <Blogs Header={Header} blogs={blogs}/> : null}
+    // </div>
   );
 }
 
