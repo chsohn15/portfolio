@@ -5,14 +5,97 @@ import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import ReactPlayer from "react-player"
 import BookQuest1 from '../images/BookQuest1.jpeg'
+import BookQuest2 from '../images/BookQuest2.jpeg'
+import BookQuest3 from '../images/BookQuest3.jpeg'
+import BookQuest4 from '../images/BookQuest4.jpeg'
+import BookQuest5 from '../images/BookQuest5.jpeg'
+
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import MobileStepper from '@material-ui/core/MobileStepper';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+
+const tutorialSteps = [
+  {
+    imgPath: BookQuest1,
+  },
+  {
+    imgPath: BookQuest2,
+  },
+  {
+    imgPath: BookQuest3,
+  },
+  {
+    imgPath: BookQuest4,
+  },
+  {
+    imgPath: BookQuest5,
+  },
+];
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: 600,
+    flexGrow: 1,
+  },
+  img: {
+    maxWidth: 600,
+    overflow: 'hidden',
+    display: 'block',
+    width: '100%',
+  },
+}));
 
 const ProjectCard = () => {
+
+  const classes = useStyles();
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = React.useState(0);
+  const maxSteps = tutorialSteps.length;
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+
 return (
 <Container >
   <Card>
     <Row>
       <Col sm={7}>
-        <img style={{width: '570px'}} src={BookQuest1}/>
+      <div className={classes.root}>
+      <img
+        className={classes.img}
+        src={tutorialSteps[activeStep].imgPath}
+        alt={tutorialSteps[activeStep].label}
+      />
+      <MobileStepper
+        steps={maxSteps}
+        position="static"
+        variant="text"
+        activeStep={activeStep}
+        nextButton={
+          <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+            Next
+            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+          </Button>
+        }
+        backButton={
+          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+            {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+            Back
+          </Button>
+        }
+      />
+    </div>
+        {/* <img style={{width: '600px'}} src={BookQuest1}/> */}
       </Col>
       <Col sm={4} style={{marginLeft: '0px'}}>
         <Card.Body>
