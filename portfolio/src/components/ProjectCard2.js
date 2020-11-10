@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ProjectCard = () => {
+const ProjectCard2 = () => {
 
   const [isOpen, openModal] = useState(false)
 
@@ -93,10 +93,37 @@ const ProjectCard = () => {
 
 
 return (
-<Container >
+<Container style={{marginTop: "60px"}}>
   <Card>
     <Row>
-      <Col sm={7}>
+      <Col sm={5} style={{marginLeft: '0px'}}>
+        <Card.Body>
+          <Card.Title>The Harry Potter Writing App
+            <ModalVideo channel='youtube' isOpen={isOpen} videoId='IDtMxssicik' onClose={() => openModal(false)} />
+            <YouTubeIcon onClick={openModal} style={{cursor: 'pointer', fontSize: '30px', marginLeft: '15px'}}>Youtube</YouTubeIcon>
+            <GitHubIcon style={{ marginLeft: '10px'}} aria-describedby={id} type="button" onClick={handleClick}/>
+            <Popper id={id} open={open} anchorEl={anchorEl} >
+              <Typography anchorEl={anchorEl} onClick={() => {
+                handleClick()
+                window.open("https://github.com/chsohn15/book_quest_frontend/tree/master/book-quest-react", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Frontend</Typography>
+              <Typography anchorEl={anchorEl} onClick={() => {
+                handleClick()
+                window.open("https://github.com/chsohn15/book_quest_backend", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Backend</Typography>
+          </Popper>
+          </Card.Title>
+          <Card.Text>
+          <em>An app designed to engage students in writing and connect students with their teachers</em><br/><br/>
+          <div>Technologies: </div>
+          <ul>
+            <li>React</li>
+            <li>Ruby on Rails</li>
+            <li>JSON Web Tokens, OAuth</li>
+            <li>Material UI, Bootstrap, Semantic UI, CSS</li>
+          </ul>
+          </Card.Text>
+        </Card.Body>
+      </Col>
+      <Col sm={7} >
       <div className={classes.root}>
       <img
         className={classes.img}
@@ -104,6 +131,7 @@ return (
         alt={tutorialSteps[activeStep].label}
       />
       <MobileStepper
+        style={{marginRight: '0px'}}
         steps={maxSteps}
         position="static"
         variant="dots"
@@ -123,81 +151,13 @@ return (
       />
     </div>
       </Col>
-      <Col sm={4} style={{marginLeft: '0px'}}>
-        <Card.Body>
-          <Card.Title>BookQuest
-            <ModalVideo channel='youtube' isOpen={isOpen} videoId='GHGlrOopo3M' onClose={() => openModal(false)} />
-            <YouTubeIcon onClick={openModal} style={{cursor: 'pointer', fontSize: '30px', marginLeft: '15px'}}>Youtube</YouTubeIcon>
-            <GitHubIcon style={{ marginLeft: '10px'}} aria-describedby={id} type="button" onClick={handleClick}/>
-            <Popper id={id} open={open} anchorEl={anchorEl} >
-              <Typography anchorEl={anchorEl} onClick={() => {
-                handleClick()
-                window.open("https://github.com/chsohn15/book_quest_frontend/tree/master/book-quest-react", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Frontend</Typography>
-              <Typography anchorEl={anchorEl} onClick={() => {
-                handleClick()
-                window.open("https://github.com/chsohn15/book_quest_backend", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Backend</Typography>
-          </Popper>
-          </Card.Title>
-          <Card.Text>
-          <em>An app designed to motivate young people to read and interact with books through a rewards system</em><br/><br/>
-          <div>Technologies: </div>
-          <ul>
-            <li>React and Redux</li>
-            <li>Ruby on Rails</li>
-            <li>Google Books API and Embedded Viewer</li>
-            <li>Recharts API</li>
-            <li>JSON Web Tokens, OAuth</li>
-            <li>Material UI, Bootstrap, CSS</li>
-          </ul>
-          </Card.Text>
-        </Card.Body>
-      </Col>
     </Row>
   </Card>
 
-  {/* <Card style={{marginTop: "60px"}}>
-    <Row>
-      <Col>
-    <Card.Body>
-      <Card.Title>The Harry Potter Writing App</Card.Title>
-      <Card.Text>
-      <em>An app designed to engage students in writing and connect students with their teachers</em>
-      </Card.Text>
-    </Card.Body>
-    </Col>
-    <Col>
-      <div style={{width: '100%'}}>
-    <ReactPlayer 
-        url="https://youtu.be/IDtMxssicik"
-      />
-      </div>
-      </Col>
-  </Row>
-  </Card>
-
-  <Card style={{marginTop: "60px"}}>
-    <Row>
-        <Col>
-      <div style={{width: '100%'}}>
-    <ReactPlayer 
-        url="https://youtu.be/Bf8jipkXKlU"
-      />
-      </div>
-      </Col>
-      <Col>
-    <Card.Body>
-      <Card.Title>{"K & C Art Gallery"}</Card.Title>
-      <Card.Text>
-      <em>A virtual art gallery that recreates the aesthetic and sensory experience of being in a museum </em>
-      </Card.Text>
-    </Card.Body>
-    </Col>
-  </Row>
-  </Card> */}
   </Container>
 
             
     )
 }
 
-export default ProjectCard
+export default ProjectCard2

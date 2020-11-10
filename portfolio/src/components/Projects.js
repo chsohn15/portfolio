@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectCard2 from './ProjectCard2'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -19,6 +20,7 @@ const Projects = (props) => {
                 <Card.Body>
                   <Card.Text>
                   <ProjectCard />
+                  <ProjectCard2 />
                 </Card.Text>
                 </Card.Body>
             </Row>
