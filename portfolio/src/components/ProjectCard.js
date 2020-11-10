@@ -18,6 +18,8 @@ import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import Popper from '@material-ui/core/Popper';
+import Popover from '@material-ui/core/Popover';
+
 
 import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
@@ -127,9 +129,9 @@ return (
             <ModalVideo channel='youtube' isOpen={isOpen} videoId='GHGlrOopo3M' onClose={() => openModal(false)} />
             <YouTubeIcon onClick={openModal} style={{cursor: 'pointer', fontSize: '30px', marginLeft: '15px'}}>Youtube</YouTubeIcon>
             <GitHubIcon style={{ marginLeft: '10px'}} aria-describedby={id} type="button" onClick={handleClick}/>
-            <Popper id={id} open={open} anchorEl={anchorEl}>
-              <Typography className={classes.paper}>Github Frontend</Typography>
-              <Typography className={classes.paper}>Github Backend</Typography>
+            <Popper id={id} open={open} anchorEl={anchorEl} >
+              <Typography onClick={() => window.open("https://github.com/chsohn15/book_quest_frontend/tree/master/book-quest-react", "_blank")} className={classes.paper} style={{cursor: 'pointer'}}>Github Frontend</Typography>
+              <Typography onClick={() => window.open("https://github.com/chsohn15/book_quest_backend", "_blank")} className={classes.paper} style={{cursor: 'pointer'}}>Github Backend</Typography>
           </Popper>
           </Card.Title>
           <Card.Text>
