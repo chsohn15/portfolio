@@ -49,7 +49,7 @@ const Menu = () => {
             <Nav.Link href="#blog">Blog</Nav.Link>
             <Nav.Link href="#contact-me">Contact Me</Nav.Link>
         </Nav>
-            <MailOutlineIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/>
+            <a href="mailto:chsohn15@gmail.com"><MailOutlineIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
             <LinkedInIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/>
             <GitHub style={{color:'white', marginTop: '3px', marginRight: '20px'}}/>
             <FontAwesomeIcon icon={faMedium} style={{color:'white', marginTop: '3px', marginRight: '10px', fontSize: '23px'}}/>
