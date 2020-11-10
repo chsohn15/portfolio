@@ -4,6 +4,8 @@ import MyStory from './components/MyStory.js'
 import Work from './components/Work.js'
 import Projects from './components/Projects.js'
 import Blogs from './components/Blogs.js'
+import ContactMe from './components/ContactMe.js'
+import Footer from './components/Footer.js'
 import styled from 'styled-components';
 import { useEffect, useState } from 'react'
 //import { BrowserRouter } from 'react-router-dom'
@@ -41,10 +43,14 @@ function App() {
     <div className="App">
       <Menu />
       <Intro />
+      <div class="main">
       <MyStory Header={Header}/>
       <Projects Header={Header}/>
       <Work Header={Header}/>
       <Blogs Header={Header} blogs={blogs}/>
+      <ContactMe Header={Header}/>
+      </div>
+      <Footer />
     </div>
   );
 }
