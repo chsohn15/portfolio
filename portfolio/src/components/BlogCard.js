@@ -24,7 +24,9 @@ return(
     <Card>
         <Card.Img variant="top" src={imgSrc}/> 
         <Card.Body>
-            <Card.Title>{title}</Card.Title>
+            <a href={link} style={{display: "table-cell"}} target = "_blank" rel = "noopener noreferrer">
+                <Card.Title style={{color: 'black'}}>{title}</Card.Title>
+            </a>
             <Card.Text>
             {preview + "..."}
                 <a href={link} style={{display: "table-cell"}} target = "_blank" rel = "noopener noreferrer">more</a>
