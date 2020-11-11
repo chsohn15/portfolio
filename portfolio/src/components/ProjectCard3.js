@@ -93,7 +93,7 @@ const ProjectCard3 = () => {
 
 
 return (
-<Container >
+<Container style={{marginTop: "60px"}}>
   <Card>
     <Row>
       <Col sm={7}>
@@ -125,29 +125,19 @@ return (
       </Col>
       <Col sm={4} style={{marginLeft: '0px'}}>
         <Card.Body>
-          <Card.Title>BookQuest
-            <ModalVideo channel='youtube' isOpen={isOpen} videoId='GHGlrOopo3M' onClose={() => openModal(false)} />
+          <Card.Title>{'K & C Art Gallery'}
+            <ModalVideo channel='youtube' isOpen={isOpen} videoId='Bf8jipkXKlU' onClose={() => openModal(false)} />
             <YouTubeIcon onClick={openModal} style={{cursor: 'pointer', fontSize: '30px', marginLeft: '15px'}}>Youtube</YouTubeIcon>
-            <GitHubIcon style={{ marginLeft: '10px'}} aria-describedby={id} type="button" onClick={handleClick}/>
-            <Popper id={id} open={open} anchorEl={anchorEl} >
-              <Typography anchorEl={anchorEl} onClick={() => {
-                handleClick()
-                window.open("https://github.com/chsohn15/book_quest_frontend/tree/master/book-quest-react", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Frontend</Typography>
-              <Typography anchorEl={anchorEl} onClick={() => {
-                handleClick()
-                window.open("https://github.com/chsohn15/book_quest_backend", "_blank")}} className={classes.paper} style={{cursor: 'pointer'}}>Github Backend</Typography>
-          </Popper>
+            <a href="https://github.com/chsohn15/final_art_gallery" target = "_blank" rel = "noopener noreferrer"><GitHubIcon style={{ marginLeft: '10px', color: 'black'}} aria-describedby={id} type="button" /></a>
           </Card.Title>
           <Card.Text>
-          <em>An app designed to motivate young people to read and interact with books through a rewards system</em><br/><br/>
+          <em>A virtual art gallery that recreates the aesthetic and sensory experience of being in a museum </em><br/><br/>
           <div>Technologies: </div>
           <ul>
-            <li>React and Redux</li>
+            <li>Javascript</li>
             <li>Ruby on Rails</li>
-            <li>Google Books API and Embedded Viewer</li>
-            <li>Recharts API</li>
-            <li>JSON Web Tokens, OAuth</li>
-            <li>Material UI, Bootstrap, CSS</li>
+            <li>JQZoom Library</li>
+            <li>HTML Canvas and SVG Graphics</li>
           </ul>
           </Card.Text>
         </Card.Body>

@@ -142,7 +142,7 @@ return (
           <em>An app designed to motivate young people to read and interact with books through a rewards system</em><br/><br/>
           <div>Technologies: </div>
           <ul>
-            <li>React and Redux</li>
+            <li>React Hooks and Redux</li>
             <li>Ruby on Rails</li>
             <li>Google Books API and Embedded Viewer</li>
             <li>Recharts API</li>
