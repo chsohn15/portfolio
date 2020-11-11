@@ -4,11 +4,12 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import ReactPlayer from "react-player"
-import BookQuest1 from '../images/BookQuest1.jpeg'
-import BookQuest2 from '../images/BookQuest2.jpeg'
-import BookQuest3 from '../images/BookQuest3.jpeg'
-import BookQuest4 from '../images/BookQuest4.jpeg'
-import BookQuest5 from '../images/BookQuest5.jpeg'
+import AG1 from '../images/AG1.jpeg'
+import AG2 from '../images/AG2.jpeg'
+import AG3 from '../images/AG3.jpeg'
+import AG4 from '../images/AG4.jpeg'
+import AG5 from '../images/AG5.jpeg'
+import AG6 from '../images/AG6.jpeg'
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
@@ -28,19 +29,22 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const tutorialSteps = [
   {
-    imgPath: BookQuest1,
+    imgPath: AG1,
   },
   {
-    imgPath: BookQuest2,
+    imgPath: AG2,
   },
   {
-    imgPath: BookQuest3,
+    imgPath: AG3,
   },
   {
-    imgPath: BookQuest4,
+    imgPath: AG4,
   },
   {
-    imgPath: BookQuest5,
+    imgPath: AG5,
+  },
+  {
+    imgPath: AG6,
   },
 ];
 

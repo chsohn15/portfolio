@@ -12,11 +12,17 @@ let pTag = content.search('<p>')
 let stringStart = pTag + 3
 
 const preview = content.slice(stringStart, stringStart + 150)
-
+let imgSrc 
+if (thumbnail){
+    imgSrc = thumbnail
+}
+else{
+    imgSrc = "https://centaur-wp.s3.eu-central-1.amazonaws.com/marketingweek/prod/content/uploads/2017/05/12103909/Coding-body-image-.jpg?auto=compress,format&q=60&w=750&h=460"
+}
 
 return(
     <Card>
-        <Card.Img variant="top" src={thumbnail} />
+        <Card.Img variant="top" src={imgSrc}/> 
         <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
