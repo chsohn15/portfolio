@@ -10,19 +10,15 @@ import AG3 from '../images/AG3.jpeg'
 import AG4 from '../images/AG4.jpeg'
 import AG5 from '../images/AG5.jpeg'
 import AG6 from '../images/AG6.jpeg'
+import AG7 from '../images/AG7.jpeg'
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import Popper from '@material-ui/core/Popper';
-import Popover from '@material-ui/core/Popover';
 
-
-import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -45,6 +41,9 @@ const tutorialSteps = [
   },
   {
     imgPath: AG6,
+  },
+  {
+    imgPath: AG7,
   },
 ];
 
