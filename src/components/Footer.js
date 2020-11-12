@@ -1,7 +1,4 @@
 import React from 'react' 
-import ReactBootstrap from 'react-bootstrap'
-import Nav from 'react-bootstrap/Nav'
-import NavBar from 'react-bootstrap/NavBar'
 
 const Footer = () => {
     return(
