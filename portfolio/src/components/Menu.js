@@ -49,10 +49,10 @@ const Menu = () => {
             <Nav.Link href="#blog">Blog</Nav.Link>
             <Nav.Link href="#contact-me">Contact Me</Nav.Link>
         </Nav>
-            <a href="mailto:chsohn15@gmail.com"><MailOutlineIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
-            <LinkedInIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/>
-            <GitHub style={{color:'white', marginTop: '3px', marginRight: '20px'}}/>
-            <FontAwesomeIcon icon={faMedium} style={{color:'white', marginTop: '3px', marginRight: '10px', fontSize: '23px'}}/>
+            <a href="mailto:chsohn15@gmail.com" ><MailOutlineIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
+            <a href="https://www.linkedin.com/in/christina-sohn/" target = "_blank" rel = "noopener noreferrer"><LinkedInIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
+            <a href="https://github.com/chsohn15" target = "_blank" rel = "noopener noreferrer"><GitHub style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
+            <a href="https://chsohn15.medium.com/" target = "_blank" rel = "noopener noreferrer"><FontAwesomeIcon icon={faMedium} style={{color:'white', marginTop: '6px', marginRight: '10px', fontSize: '23px'}}/></a>
             
   </Navbar>
     )
