@@ -42,21 +42,20 @@ const Menu = () => {
                 height="33"
                 className="d-inline-block align-top"
             />{' '}</Navbar.Brand>
-        <Nav className="mr-auto">
-            <Nav.Link href="#my-story">My Story</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#work">Work</Nav.Link>
-            <Nav.Link href="#blog">Blog</Nav.Link>
-            <Nav.Link href="#contact-me">Contact Me</Nav.Link>
-        </Nav>
+            <Nav className="mr-auto">
+                <Nav.Link href="#my-story">My Story</Nav.Link>
+                <Nav.Link href="#projects">Projects</Nav.Link>
+                <Nav.Link href="#work">Work</Nav.Link>
+                <Nav.Link href="#blog">Blog</Nav.Link>
+                <Nav.Link href="#contact-me">Contact Me</Nav.Link>
+            </Nav>
             <a href="mailto:chsohn15@gmail.com" ><MailOutlineIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
             <a href="https://www.linkedin.com/in/christina-sohn/" target = "_blank" rel = "noopener noreferrer"><LinkedInIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
             <a href="https://github.com/chsohn15" target = "_blank" rel = "noopener noreferrer"><GitHub style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
-            <a href="https://chsohn15.medium.com/" target = "_blank" rel = "noopener noreferrer"><FontAwesomeIcon icon={faMedium} style={{color:'white', marginTop: '6px', marginRight: '10px', fontSize: '23px'}}/></a>
-            
-  </Navbar>
+            <a href="https://chsohn15.medium.com/" target = "_blank" rel = "noopener noreferrer"><FontAwesomeIcon icon={faMedium} style={{color:'white', marginTop: '6px', marginRight: '10px', fontSize: '23px'}}/></a>     
+        </Navbar>
     )
-    }
+}
 
 
 export default Menu
