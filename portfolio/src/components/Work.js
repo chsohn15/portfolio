@@ -15,11 +15,11 @@ const Work = (props) => {
       </Row>
         <Row style={{marginLeft: '100px', marginTop: '0px', marginRight: '100px'}}>
         <Col>
-          <Card>
+          <Card >
             <Row >
-                <Card.Body>
+                <Card.Body style={{marginLeft: '10px'}}>
                   <Card.Text>
-                  <p>English Teacher, South County High School, Lorton, VA					       	08/2016 - 06/2020</p>
+                  <p style={{whiteSpace: 'pre'}}><em>English Teacher</em>, <strong>South County High School</strong>, Lorton, VA.                                                      August 2016 - June 2020</p>
             <ul>
                 <li>Successfully engaged students in grades 10-12 through varied methods including small group work, effective moderating of class discussion, and authentic assessments</li>
                 <li>Collaborated with grade-level teams to create cohesive literary units centered around engaging topics</li>
@@ -29,17 +29,16 @@ const Work = (props) => {
                 </Card.Text>
                 </Card.Body>
             </Row>
-          </Card>
-          <Card>
+          </Card >
+          <Card style={{marginTop: '30px'}}>
             <Row >
-                <Card.Body>
+                <Card.Body style={{marginLeft: '10px'}}>
                   <Card.Text>
-                  <p>English Teacher, South County High School, Lorton, VA					       	08/2016 - 06/2020</p>
+                  <p style={{whiteSpace: 'pre'}}><em>ESOL Teacher</em>, <strong>South Lakes High School</strong>, Reston, VA.		                                                         August 2015 - June 2016</p>
             <ul>
-                <li>Successfully engaged students in grades 10-12 through varied methods including small group work, effective moderating of class discussion, and authentic assessments</li>
-                <li>Collaborated with grade-level teams to create cohesive literary units centered around engaging topics</li>
-                <li>Incorporated technology such as Google Suite and Canva into lesson plans</li>
-                <li>Set measurable and attainable goals for student progress in writing throughout the year</li>
+                <li>Planned and implemented varied instruction for ESOL Level 1 Content and Literature classes</li>
+                <li>Set measurable and attainable academic goals for students based upon benchmark reading and writing assessments</li>
+                <li>Participated in professional development opportunities for Balanced Literacy program and co-teaching strategies</li>
             </ul>
                 </Card.Text>
                 </Card.Body>
