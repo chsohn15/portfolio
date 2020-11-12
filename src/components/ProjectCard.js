@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
-import ReactPlayer from "react-player"
 import BookQuest1 from '../images/BookQuest1.jpeg'
 import BookQuest2 from '../images/BookQuest2.jpeg'
 import BookQuest3 from '../images/BookQuest3.jpeg'
@@ -12,7 +11,6 @@ import BookQuest5 from '../images/BookQuest5.jpeg'
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
