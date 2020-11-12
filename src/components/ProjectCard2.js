@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1.5),
     backgroundColor: theme.palette.background.paper,
   },
-}));
+}), {index: 1});
 
 const ProjectCard2 = () => {
 
