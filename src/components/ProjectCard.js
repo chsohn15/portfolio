@@ -152,46 +152,6 @@ return (
       </Col>
     </Row>
   </Card>
-
-  {/* <Card style={{marginTop: "60px"}}>
-    <Row>
-      <Col>
-    <Card.Body>
-      <Card.Title>The Harry Potter Writing App</Card.Title>
-      <Card.Text>
-      <em>An app designed to engage students in writing and connect students with their teachers</em>
-      </Card.Text>
-    </Card.Body>
-    </Col>
-    <Col>
-      <div style={{width: '100%'}}>
-    <ReactPlayer 
-        url="https://youtu.be/IDtMxssicik"
-      />
-      </div>
-      </Col>
-  </Row>
-  </Card>
-
-  <Card style={{marginTop: "60px"}}>
-    <Row>
-        <Col>
-      <div style={{width: '100%'}}>
-    <ReactPlayer 
-        url="https://youtu.be/Bf8jipkXKlU"
-      />
-      </div>
-      </Col>
-      <Col>
-    <Card.Body>
-      <Card.Title>{"K & C Art Gallery"}</Card.Title>
-      <Card.Text>
-      <em>A virtual art gallery that recreates the aesthetic and sensory experience of being in a museum </em>
-      </Card.Text>
-    </Card.Body>
-    </Col>
-  </Row>
-  </Card> */}
   </Container>
 
             
