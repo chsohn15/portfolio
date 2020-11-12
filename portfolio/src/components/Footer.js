@@ -9,7 +9,7 @@ const Footer = () => {
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Created and Designed by Christina Sohn &middot; chsohn15@gmail.com
+              <p class="copyright-text">Created and Designed by Christina Sohn with React &middot; chsohn15@gmail.com
               </p>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">

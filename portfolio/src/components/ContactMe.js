@@ -24,7 +24,7 @@ const ContactMe = (props) => {
                         I'd love to chat about anything ranging from job opportunities, new technologies, <br/>
                         entertaining podcasts, or great books to read.  
                         </Card.Text>
-                    <Button variant="primary">Say Hello</Button>
+                    <Button variant="dark" style={{backgroundColor: '#087FCE'}}>Say Hello</Button>
                  </Card.Body>
             </Card>
             </Row>
@@ -34,3 +34,5 @@ const ContactMe = (props) => {
 }
 
 export default ContactMe
+
+//#69636B grey
