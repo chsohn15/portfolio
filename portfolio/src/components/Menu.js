@@ -47,7 +47,7 @@ const Menu = () => {
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#work">Work</Nav.Link>
                 <Nav.Link href="#blog">Blog</Nav.Link>
-                <Nav.Link href="#contact-me">Contact Me</Nav.Link>
+                <Nav.Link href="#contact">Contact Me</Nav.Link>
             </Nav>
             <a href="mailto:chsohn15@gmail.com" ><MailOutlineIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>
             <a href="https://www.linkedin.com/in/christina-sohn/" target = "_blank" rel = "noopener noreferrer"><LinkedInIcon style={{color:'white', marginTop: '3px', marginRight: '20px'}}/></a>

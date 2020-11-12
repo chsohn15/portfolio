@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import styled from 'styled-components';
+import Nav from 'react-bootstrap/Nav'
 
 
 const Intro = () => {
@@ -51,11 +52,32 @@ const Intro = () => {
     font-size: 55px
     `;
 
+    const Arrow = styled.i`
+    width: 30px;
+    color: purple;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    `;
+
+    const Text = styled.div`
+    margin-left: auto;
+    margin-right: auto;
+    color: purple;
+    width: 100px;
+    margin-top: 260px;
+    `
+
     return (
         <Jumbotron fluid id="jumbotron" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&w=1000&q=80')", backgroundSize: 'cover', height:'100vh'}}>
             <Subtitle>Hello, my name is </Subtitle>
             <Title>Christina Sohn.</Title>
             <Title>I create and design <span id="test">{phrase}.</span></Title>
+            <Nav.Link href="#my-story">
+                <Text>Learn more</Text>
+                <Arrow className="fa fa-chevron-down" ></Arrow>
+            </Nav.Link>
         </Jumbotron>
     )
 }
