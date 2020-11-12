@@ -19,19 +19,19 @@ const Work = (props) => {
             <Row >
                 <Card.Body style={{marginLeft: '10px'}}>
                   <Card.Text>
-                  <p style={{whiteSpace: 'pre'}}><em>English Teacher</em>, <strong>South County High School</strong>, Lorton, VA.                                                      August 2016 - June 2020</p>
+                  <p style={{whiteSpace: 'pre'}}><em>Software Engineering Student</em>, <strong>Flatiron School</strong>, Washington, DC.                                         July 2020 - October 2020</p>
             <ul>
-                <li>Successfully engaged students in grades 10-12 through varied methods including small group work, effective moderating of class discussion, and authentic assessments</li>
-                <li>Collaborated with grade-level teams to create cohesive literary units centered around engaging topics</li>
-                <li>Incorporated technology such as Google Suite and Canva into lesson plans</li>
-                <li>Set measurable and attainable goals for student progress in writing throughout the year</li>
+                <li>Participated in full-time Software Engineering Program</li>
+                <li>Produced projects with Ruby on Rails, Javascript, React, and Redux</li>
+                <li>Collaborated and paired daily with cohort members to build labs, solve code challenges, and create projects</li>
+                <li>Initiated and implemented project lifecycle, including composing database diagrams, wireframes, and project pitches; planning and assembling a minimum viable product; testing and extending project capabilities; and presenting a final product</li>
             </ul>
                 </Card.Text>
                 </Card.Body>
             </Row>
           </Card >
 
-          <Card >
+          <Card style={{marginTop: '30px'}}>
             <Row >
                 <Card.Body style={{marginLeft: '10px'}}>
                   <Card.Text>
